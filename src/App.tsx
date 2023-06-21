@@ -10,15 +10,43 @@ import { PageLoesungen } from './pages/PageLoesungen';
 function App() {
 	return (
 		<div className="App">
-			<h1>Nabtesko</h1>
-			<nav>
-				<NavLink to="/startseite">Startseite</NavLink>
-				<NavLink to="/produkte">Produkte</NavLink>
-				<NavLink to="/technologie">Technologie</NavLink>
-				<NavLink to="/loesungen">Lösungen</NavLink>
-				<NavLink to="/downloads">Downloads</NavLink>
-				<NavLink to="/unternehmen">Unternehmen</NavLink>
-			</nav>
+			<header>
+				<div className="header1">
+					<div className="Logo">
+						<h1>Nabtesko</h1>
+						<p>Precision Equipment Company</p>
+					</div>
+					<nav>
+						<NavLink to="/startseite">Startseite</NavLink>
+						<NavLink to="/produkte">Produkte</NavLink>
+						<NavLink to="/technologie">Technologie</NavLink>
+						<NavLink to="/loesungen">Lösungen</NavLink>
+						<NavLink to="/downloads">Downloads</NavLink>
+						<NavLink to="/unternehmen">Unternehmen</NavLink>
+					</nav>
+				</div>
+				<div className="header2">
+					<div className="contact">
+						<a href="mailto:recipient@example.com" target="_blank">
+							E-mail senden
+						</a>
+						<a href="tel:+123456789">+49 211 17379-0</a>
+					</div>
+
+					<form>
+						<input type="text" name="query" placeholder="Suche" />
+						<img src="./img/icon.png" alt="" />
+					</form>
+
+					<div className="sprache">
+						<select id="language" name="language">
+							<option value="en">English</option>
+							<option value="de">Deutsch</option>
+						</select>
+						<input type="submit" value="Change Language" />
+					</div>
+				</div>
+			</header>
 
 			<Routes>
 				<Route path="/startseite" element={<PageStartseite />} />
@@ -27,7 +55,10 @@ function App() {
 				<Route path="/loesungen" element={<PageLoesungen />} />
 				<Route path="/downloads" element={<PageDownloads />} />
 				<Route path="/unternehmen" element={<PageUnternehmen />} />
-				<Route path="/" element={<Navigate to="/startseite" replace />} />
+				<Route
+					path="/"
+					element={<Navigate to="/startseite" replace />}
+				/>
 			</Routes>
 		</div>
 	);
