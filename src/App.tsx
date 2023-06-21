@@ -7,14 +7,27 @@ import { PageDownloads } from './pages/PageDownloads';
 import { PageUnternehmen } from './pages/PageUnternehmen';
 import { PageLoesungen } from './pages/PageLoesungen';
 
+const texts = {
+	english: {
+		title: "The Nabtesko Site",
+		subtitle: "Precision Equipment Company"
+	},
+	german: {
+		title: "Die Nabtesko Website",
+		subtitle: "Präzisionsausrüstungsunternehmen"
+	}
+}
+
+const currentLangage = 'german';
+
 function App() {
 	return (
 		<div className="App">
 			<header>
 				<div className="header1">
 					<div className="Logo">
-						<h1>Nabtesko</h1>
-						<p>Precision Equipment Company</p>
+						<h1>{texts[currentLangage].title}</h1>
+						<p>{texts[currentLangage].subtitle}</p>
 					</div>
 					<nav>
 						<ul>
