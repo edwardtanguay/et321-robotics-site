@@ -10,7 +10,7 @@ import { PageLoesungen } from './pages/PageLoesungen';
 function App() {
 	return (
 		<div className="App">
-			<h1>Info Site</h1>
+			<h1>Nabtesko</h1>
 			<nav>
 				<NavLink to="/startseite">Startseite</NavLink>
 				<NavLink to="/produkte">Produkte</NavLink>
