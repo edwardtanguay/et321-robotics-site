@@ -18,7 +18,7 @@ const texts = {
 	}
 }
 
-const currentLangage = 'german';
+const currentLangage = 'english';
 
 function App() {
 	return (
