@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	flex-flow: column;
+	width: 100vw;
+	position: fixed;
+	z-index: 2;
+}
+
+
+/* HEADER1 -weiß*/
+.header1 {
+	display: flex;
+	flex-flow: nowrap;
+	justify-content: space-between;
+	background-color: rgb(255, 255, 255);
+	align-items: flex-end;
+	padding: 1.8rem 1rem;
+}
+
+/* weiße Zeile Header */
+
+header ul {
+	display: flex;
+	justify-content: end;
+	gap: 0.8rem;
+	list-style: none;
+	font-family: 'Nunito Sans', sans-serif;
+	padding-right: 11rem;
+}
+
+li {
+	border-right: 1px solid rgb(37, 37, 37);
+	padding-right: 0.8rem;
+}
+
+li:nth-of-type(6) {
+	border-right: none;
+}
+
+.Logo {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	color: rgb(2, 129, 189);
+	font-weight: bold;
+	font-style: normal;
+	padding-left: 11vw;
+}
+
+/* Nabtesko LOGO */
+
+/* HEADER2 -blau*/
+
+.header2 {
+	display: flex;
+	justify-content: space-around;
+	padding: 1rem;
+	background-color: rgba(11, 153, 219);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* schatten für border-box-shadow */
+.header2 a {
+	text-decoration: none;
+	color: rgba(245, 245, 245, 0.753)
+}
+
+.header2 form input {
+	color: rgba(245, 245, 245, 0.753);
+	border-bottom: 1px solid white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: none;
+}
+
+form img {
+	width: 15px;
+}
+
+.header2 .sprache select,
+input {
+	color: rgba(245, 245, 245, 0.753);
+	border: none;
+	background: none;
+}
+
+.hero {
+	background: url(./img/csm_20211026_header_Robotik_b840ea20aa.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.hero-text {
+	width: 700px;
+	height: 45%;
+	background-color: white;
+	opacity: 0.8;
+	font-family: 'Nunito Sans', sans-serif;
+
+	font-style: normal;
+	color: rgba(49, 49, 49, 0.781);
+
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.7rem;
+}
+
+.hero-text :first-child {
+	font-size: 3rem;
+}
+
+.hero-text :last-child {
+	font-size: 2rem;
+}
+
+/* fürs Zentrieren von weisem Hintergrund mit text:     
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+
+main {
+	padding-top: 10rem;
+}
