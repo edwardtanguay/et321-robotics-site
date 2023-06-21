@@ -37,6 +37,11 @@ header ul {
 li {
 	border-right: 1px solid rgb(37, 37, 37);
 	padding-right: 0.8rem;
+
+	a {
+		color: #555;
+		text-decoration: none;
+	}
 }
 
 li:nth-of-type(6) {

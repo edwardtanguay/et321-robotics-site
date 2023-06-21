@@ -62,18 +62,20 @@ function App() {
 				</div>
 			</header>
 
-			<Routes>
-				<Route path="/startseite" element={<PageStartseite />} />
-				<Route path="/produkte" element={<PageProdukte />} />
-				<Route path="/technologie" element={<PageTechnologie />} />
-				<Route path="/loesungen" element={<PageLoesungen />} />
-				<Route path="/downloads" element={<PageDownloads />} />
-				<Route path="/unternehmen" element={<PageUnternehmen />} />
-				<Route
-					path="/"
-					element={<Navigate to="/startseite" replace />}
-				/>
-			</Routes>
+			<main>
+				<Routes>
+					<Route path="/startseite" element={<PageStartseite />} />
+					<Route path="/produkte" element={<PageProdukte />} />
+					<Route path="/technologie" element={<PageTechnologie />} />
+					<Route path="/loesungen" element={<PageLoesungen />} />
+					<Route path="/downloads" element={<PageDownloads />} />
+					<Route path="/unternehmen" element={<PageUnternehmen />} />
+					<Route
+						path="/"
+						element={<Navigate to="/startseite" replace />}
+					/>
+				</Routes>
+			</main>
 		</div>
 	);
 }
