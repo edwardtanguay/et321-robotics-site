@@ -17,12 +17,26 @@ function App() {
 						<p>Precision Equipment Company</p>
 					</div>
 					<nav>
-						<NavLink to="/startseite">Startseite</NavLink>
-						<NavLink to="/produkte">Produkte</NavLink>
-						<NavLink to="/technologie">Technologie</NavLink>
-						<NavLink to="/loesungen">Lösungen</NavLink>
-						<NavLink to="/downloads">Downloads</NavLink>
-						<NavLink to="/unternehmen">Unternehmen</NavLink>
+						<ul>
+							<li>
+								<NavLink to="/startseite">Startseite</NavLink>
+							</li>
+							<li>
+								<NavLink to="/produkte">Produkte</NavLink>
+							</li>
+							<li>
+								<NavLink to="/technologie">Technologie</NavLink>
+							</li>
+							<li>
+								<NavLink to="/loesungen">Lösungen</NavLink>
+							</li>
+							<li>
+								<NavLink to="/downloads">Downloads</NavLink>
+							</li>
+							<li>
+								<NavLink to="/unternehmen">Unternehmen</NavLink>
+							</li>
+						</ul>
 					</nav>
 				</div>
 				<div className="header2">
