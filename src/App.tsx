@@ -4,6 +4,7 @@ import { PageStartseite } from './pages/PageStartseite';
 import { PageProdukte } from './pages/PageProdukte';
 import { PageTechnologie } from './pages/PageTechnologie';
 import { PageDownloads } from './pages/PageDownloads';
+import { PageUnternehmen } from './pages/PageUnternehmen';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 				<NavLink to="/produkte">Produkte</NavLink>
 				<NavLink to="/technologie">Technologie</NavLink>
 				<NavLink to="/downloads">Downloads</NavLink>
+				<NavLink to="/unternehmen">Unternehmen</NavLink>
 			</nav>
 
 			<Routes>
@@ -21,6 +23,7 @@ function App() {
 				<Route path="/produkte" element={<PageProdukte />} />
 				<Route path="/technologie" element={<PageTechnologie />} />
 				<Route path="/downloads" element={<PageDownloads />} />
+				<Route path="/unternehmen" element={<PageUnternehmen />} />
 				<Route path="/" element={<Navigate to="/startseite" replace />} />
 			</Routes>
 		</div>
