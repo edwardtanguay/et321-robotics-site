@@ -44,6 +44,7 @@ function App() {
 						<a href="mailto:recipient@example.com" target="_blank">
 							E-mail senden
 						</a>
+						{' '}
 						<a href="tel:+123456789">+49 211 17379-0</a>
 					</div>
 
@@ -57,6 +58,7 @@ function App() {
 							<option value="en">English</option>
 							<option value="de">Deutsch</option>
 						</select>
+						{' '}
 						<input type="submit" value="Change Language" />
 					</div>
 				</div>
