@@ -50,7 +50,8 @@ function App() {
 
 					<form>
 						<input type="text" name="query" placeholder="Suche" />
-						<img src="./img/icon.png" alt="" />
+						{' '}
+						<img src="images/icon.png" alt="" />
 					</form>
 
 					<div className="sprache">
