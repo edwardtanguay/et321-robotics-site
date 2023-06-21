@@ -1,8 +1,8 @@
 import './App.scss';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
-import { PageAbout } from './pages/PageAbout';
 import { PageStartseite } from './pages/PageStartseite';
 import { PageProdukte } from './pages/PageProdukte';
+import { PageTechnologie } from './pages/PageTechnologie';
 
 function App() {
 	return (
@@ -11,13 +11,13 @@ function App() {
 			<nav>
 				<NavLink to="/startseite">Startseite</NavLink>
 				<NavLink to="/produkte">Produkte</NavLink>
-				<NavLink to="/about">About</NavLink>
+				<NavLink to="/technologie">Technologie</NavLink>
 			</nav>
 
 			<Routes>
 				<Route path="/startseite" element={<PageStartseite />} />
 				<Route path="/produkte" element={<PageProdukte />} />
-				<Route path="/about" element={<PageAbout />} />
+				<Route path="/technologie" element={<PageTechnologie />} />
 				<Route path="/" element={<Navigate to="/startseite" replace />} />
 			</Routes>
 		</div>
